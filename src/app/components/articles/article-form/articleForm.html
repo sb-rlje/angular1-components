@@ -1,0 +1,17 @@
+<form>
+  <div class="form-group">
+    <label>Headline</label>
+    <input class="form-control" 
+           ng-model="$articleFormComponent.article.headline" 
+           aria-describedby="headline" 
+           placeholder="Headline">
+  </div>
+  <div class="form-group">
+    <label>Content</label>
+    <textarea class="form-control" 
+              ng-model="$articleFormComponent.article.content" 
+              rows="5">
+    </textarea>
+  </div>
+  <button type="submit" ng-click="$articleFormComponent.createArticle()" class="btn btn-primary">Create New</button>
+</form>
